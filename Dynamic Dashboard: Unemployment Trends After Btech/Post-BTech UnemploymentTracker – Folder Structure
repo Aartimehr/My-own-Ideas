@@ -1,0 +1,24 @@
+post_btech_unemployment_tracker/
+├── data/                        # Data files
+│   ├── raw/                     # Raw datasets (CSV, Excel, etc.)
+│   └── cleaned/                 # Cleaned & processed data
+│
+├── notebooks/                  # Jupyter notebooks
+│   └── analysis.ipynb
+│
+├── dashboard/                  # Dashboard app code
+│   ├── app.py                  # Streamlit or Dash app
+│   ├── components/             # reusable dashboard components
+│   │   └── state_map.py
+│   └── assets/                 # Static files (images, logos, etc.)
+│
+├── reports/                    # Summary reports, charts, exports
+│   └── unemployment_trends.png
+│
+├── scripts/                    # Python scripts for cleaning/data prep
+│   ├── clean_data.py
+│   └── load_data.py
+│
+├── requirements.txt            # Required libraries
+├── README.md                   # Project overview
+
