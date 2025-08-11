@@ -1,0 +1,16 @@
+What steps I followed
+I used VS code 
+So, in the Terminal 
+First , Install required libraries
+(Pip install scrapy Pylint autopep8)
+then,
+scrapy genspider skincare_uses.py(my file name inside spider) stanfordchem.com (domain name in my case)
+(so, the above cmd will create file inside the spider folder)
+now, inside this file (skincare_uses.py) I added url followed by allowed_domains = [""]
+def start_requests(self):
+  yeild scrapy.request(url="",callback=self.parse)
+I used start_requests() function so that I can extract data from specific website using yeild
+Then Print
+def parse(self, response):
+  print(response.body)
+now I have successfully extracted the HTML data from the website 
