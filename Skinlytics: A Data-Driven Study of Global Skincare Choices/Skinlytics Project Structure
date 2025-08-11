@@ -1,25 +1,14 @@
-skinlytics/
-├── data/                      # To store raw and cleaned data
-│   ├── raw/
-│   └── cleaned/
-│
-├── notebooks/                # Jupyter notebooks for analysis
-│   └── skincare_analysis.ipynb
-│
-├── scrapy_skinlytics/        # Scrapy project folder (auto-created)
-│   ├── scrapy_skinlytics/
-│   │   ├── __init__.py
-│   │   ├── items.py          # Define data structure (fields to scrape)
-│   │   ├── middlewares.py
-│   │   ├── pipelines.py      # Clean/process/store scraped data
-│   │   ├── settings.py       # Configure your bot (user-agent, delays, etc.)
-│   │   └── spiders/          # Your actual spiders live here
-│   │       ├── __init__.py
-│   │       └── skincare_spider.py   # Spider to scrape a skincare site/blog
-│   └── scrapy.cfg            # Scrapy configuration file
-│
-├── reports/                  #  store graphs, charts, PDFs
-│   └── skincare_trends.png
-│
-├── requirements.txt          # List of required Python libraries
-├── README.md                 # Project overview and usage instructions
+Skinanalytics/
+    |--Skinanalytics
+       |        | --_Pycache__
+       |        |-- Spiders
+       |                |--_Pycache__
+       |                |--_init_.py
+       |                |--Skincare_uses.py
+       |--_init_.py
+       |--items.py
+       |--middlewares.py
+       |--pipelines.py
+       |--settings.py
+
+|--Scrapy.cfg                 
