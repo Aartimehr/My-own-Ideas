@@ -4,13 +4,22 @@ So, in the Terminal
 First , Install required libraries
 (Pip install scrapy Pylint autopep8)
 then,
-scrapy genspider skincare_uses.py(my file name inside spider) stanfordchem.com (domain name in my case)
+scrapy genspider drugs_usage.py(my file name inside spider) stanfordchem.com (domain name in my case)
 (so, the above cmd will create file inside the spider folder)
-now, inside this file (skincare_uses.py) I added url followed by allowed_domains = [""]
+now, inside this file (drugs_usage.py) I added url followed by allowed_domains = [""]
 def start_requests(self):
   yeild scrapy.request(url="",callback=self.parse)
 I used start_requests() function so that I can extract data from specific website using yeild
 Then Print
 def parse(self, response):
   print(response.body)
+In the terminal 
+ scrapy crawl skincare_uses ,
+on enter
 now I have successfully extracted the HTML data from the website 
+Now, let's go to inspect
+Add xpath from the website 
+then scrapy crawl drugs_usage
+will get data and now after performing some data manipulations task , here I removed null values and extra gaps .
+now , get data in the csv form 
+ scrapy crawl drugs_usage -o output_result.csv  (output_result is the csv file name)
